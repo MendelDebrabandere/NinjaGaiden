@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Framework Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Game Files\Enemy">
+      <UniqueIdentifier>{35cbaef6-e37d-4f6d-8d4f-d69da9951d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\Powerups">
+      <UniqueIdentifier>{b03251d5-7938-4888-965d-4b86d5270513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\Projectiles">
+      <UniqueIdentifier>{ff583659-7b2d-46be-afe4-f22f4c307b40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\Level">
+      <UniqueIdentifier>{abdbfa3c-ab07-4369-9839-1648e8a80640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\Player">
+      <UniqueIdentifier>{f325bd83-9d32-4b59-90de-ff7e01910d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\Enemy\Enemies Derived">
+      <UniqueIdentifier>{4228a874-dcd8-442b-915a-adbcfa79b5d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix2x3.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundStream.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="structs.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SVGParser.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2f.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>Game Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Biker.cpp">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClCompile>
+    <ClCompile Include="Dog.cpp">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClCompile>
+    <ClCompile Include="KnifeMan.cpp">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClCompile>
+    <ClCompile Include="Fighter.cpp">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Game Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerupManager.cpp">
+      <Filter>Game Files\Powerups</Filter>
+    </ClCompile>
+    <ClCompile Include="Powerup.cpp">
+      <Filter>Game Files\Powerups</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectileManager.cpp">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ThrowingKnife.cpp">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ThrowingStar.cpp">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Game Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform.cpp">
+      <Filter>Game Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Walls.cpp">
+      <Filter>Game Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Avatar.cpp">
+      <Filter>Game Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>Game Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Game Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="WindmillThrowingStar.cpp">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="ArtOfTheFireWheel.cpp">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2x3.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffect.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundStream.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SVGParser.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2f.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>Game Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Biker.h">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClInclude>
+    <ClInclude Include="Dog.h">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClInclude>
+    <ClInclude Include="KnifeMan.h">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClInclude>
+    <ClInclude Include="Fighter.h">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Game Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerupManager.h">
+      <Filter>Game Files\Powerups</Filter>
+    </ClInclude>
+    <ClInclude Include="Powerup.h">
+      <Filter>Game Files\Powerups</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectileManager.h">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrowingKnife.h">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrowingStar.h">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Walls.h">
+      <Filter>Game Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Game Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>Game Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Avatar.h">
+      <Filter>Game Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.h">
+      <Filter>Game Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Game Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="WindmillThrowingStar.h">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ArtOfTheFireWheel.h">
+      <Filter>Game Files\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Game Files\Enemy\Enemies Derived</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Debrabandere_Mendel_NinjaGaiden.xlsx" />
+  </ItemGroup>
+</Project>
