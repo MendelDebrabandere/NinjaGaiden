@@ -7,18 +7,18 @@ class ThrowingKnife final: public Projectile
 {
 public:
 	explicit ThrowingKnife(TextureManager* TM, Point2f spawnPos);
-	virtual ~ThrowingKnife();
+	~ThrowingKnife() override;
 
 	ThrowingKnife(const ThrowingKnife& other) = delete;
 	ThrowingKnife& operator=(const ThrowingKnife& other) = delete;
 	ThrowingKnife(ThrowingKnife&& other) = delete;
 	ThrowingKnife& operator=(ThrowingKnife&& other) = delete;
 
-	virtual void Draw() const;
-	virtual void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar);
+	void Draw() const override;
+	void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar) override;
 
 
-	virtual void Destroy() override;
+	void Destroy() override;
 
 private:
 	static int s_InstanceCounter;

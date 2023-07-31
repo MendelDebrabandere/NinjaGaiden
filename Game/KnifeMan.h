@@ -7,15 +7,15 @@ class KnifeMan final: public Enemy
 {
 public:
 	explicit KnifeMan(SoundManager* SM, TextureManager* TM, const Point2f& spawnPos);
-	virtual ~KnifeMan();
+	~KnifeMan() override;
 
 	KnifeMan(const KnifeMan& other) = delete;
 	KnifeMan& operator=(const KnifeMan& other) = delete;
 	KnifeMan(KnifeMan&& other) = delete;
 	KnifeMan& operator=(KnifeMan&& other) = delete;
 
-	virtual void Draw() const override;
-	virtual void Update(float elapsedSec, const Level* pLevel, const Rectf& cameraWindow, Avatar* pAvatar, ProjectileManager* pPManager, bool timePaused) override;
+	void Draw() const override;
+	void Update(float elapsedSec, const Level* pLevel, const Rectf& cameraWindow, Avatar* pAvatar, ProjectileManager* pPManager, bool timePaused) override;
 
 private:
 	float m_SecondsTillNextAttack;

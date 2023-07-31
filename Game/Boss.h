@@ -5,7 +5,7 @@ class Boss final: public Enemy
 {
 public:
 	explicit Boss(SoundManager* SM, TextureManager* TM, const Point2f& spawnPos);
-	virtual ~Boss();
+	~Boss() override;
 
 	Boss(const Boss& other) = delete;
 	Boss& operator=(const Boss& other) = delete;
@@ -13,8 +13,8 @@ public:
 	Boss& operator=(Boss&& other) = delete;
 
 
-	virtual void Draw() const override;
-	virtual void Update(float elapsedSec, const Level* pLevel, const Rectf& cameraWindow, Avatar* pAvatar, ProjectileManager* pPManager, bool timePaused) override;
+	void Draw() const override;
+	void Update(float elapsedSec, const Level* pLevel, const Rectf& cameraWindow, Avatar* pAvatar, ProjectileManager* pPManager, bool timePaused) override;
 
 private:
 	int m_NrFramesPerSec;

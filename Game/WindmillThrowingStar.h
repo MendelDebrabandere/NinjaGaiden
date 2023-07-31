@@ -7,17 +7,17 @@ class WindmillThrowingStar final: public Projectile
 {
 public:
 	explicit WindmillThrowingStar(TextureManager* TM, Point2f spawnPos);
-	virtual ~WindmillThrowingStar();
+	~WindmillThrowingStar() override;
 	WindmillThrowingStar(const WindmillThrowingStar& other) = delete;
 	WindmillThrowingStar& operator=(const WindmillThrowingStar& other) = delete;
 	WindmillThrowingStar(WindmillThrowingStar&& other) = delete;
 	WindmillThrowingStar& operator=(WindmillThrowingStar&& other) = delete;
 
 
-	virtual void Draw() const;
-	virtual void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar);
+	void Draw() const override;
+	void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar) override;
 
-	virtual void Destroy() override;
+	void Destroy() override;
 
 private:
 	static int s_InstanceCounter;

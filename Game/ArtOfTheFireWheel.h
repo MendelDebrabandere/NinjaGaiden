@@ -7,7 +7,7 @@ class ArtOfTheFireWheel final: public Projectile
 {
 public:
 	explicit ArtOfTheFireWheel(TextureManager* TM, Point2f spawnPos);
-	virtual ~ArtOfTheFireWheel();
+	~ArtOfTheFireWheel() override;
 
 	ArtOfTheFireWheel(const ArtOfTheFireWheel& other) = delete;
 	ArtOfTheFireWheel& operator=(const ArtOfTheFireWheel& other) = delete;
@@ -15,8 +15,8 @@ public:
 	ArtOfTheFireWheel& operator=(ArtOfTheFireWheel&& other) = delete;
 
 
-	virtual void Draw() const;
-	virtual void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar);
+	void Draw() const override;
+	void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar) override;
 
 private:
 	static int s_InstanceCounter;

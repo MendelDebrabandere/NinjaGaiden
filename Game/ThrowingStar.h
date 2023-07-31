@@ -7,7 +7,7 @@ class ThrowingStar final: public Projectile
 {
 public:
 	explicit ThrowingStar(TextureManager* TM, Point2f spawnPos);
-	virtual ~ThrowingStar();
+	~ThrowingStar() override;
 
 	ThrowingStar(const ThrowingStar& other) = delete;
 	ThrowingStar& operator=(const ThrowingStar& other) = delete;
@@ -16,10 +16,10 @@ public:
 
 
 
-	virtual void Draw() const;
-	virtual void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar);
+	void Draw() const override;
+	void Update(float elapsedSec, const Rectf& cameraWindow, std::vector<Enemy*>&, Avatar* pAvatar) override;
 
-	virtual void Destroy() override;
+	void Destroy() override;
 
 private:
 	static int s_InstanceCounter;
